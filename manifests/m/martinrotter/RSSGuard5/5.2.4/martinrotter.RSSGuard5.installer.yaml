@@ -17,7 +17,7 @@ AppsAndFeaturesEntries:
 InstallationMetadata:
   DefaultInstallLocation: C:\RSS Guard 5
 Installers:
-- Architecture: x86
+- Architecture: x64
   InstallerUrl: https://github.com/martinrotter/rssguard/releases/download/5.2.4/rssguard-5.2.4-web-qt6-win10.exe
   InstallerSha256: 2FBFC2F443E5E21ACAB7854B0A756346F531431355E7A720926833A3082DFD95
 ManifestType: installer

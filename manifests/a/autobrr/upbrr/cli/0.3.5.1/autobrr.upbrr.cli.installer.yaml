@@ -5,9 +5,6 @@ PackageIdentifier: autobrr.upbrr.cli
 PackageVersion: 0.3.5.1
 InstallerType: zip
 NestedInstallerType: portable
-NestedInstallerFiles:
-- RelativeFilePath: upbrr-windows-amd64.exe
-  PortableCommandAlias: upbrr
 InstallModes:
 - silent
 - silentWithProgress
@@ -19,8 +16,14 @@ Installers:
 - Architecture: x64
   InstallerUrl: https://github.com/autobrr/upbrr/releases/download/v0.3.5.1/upbrr-cli-v0.3.5.1-windows-amd64.zip
   InstallerSha256: 9F139B2CE8CD4C26C1D4689ACBABBDB14DB6C4873719FA7F5FAC0FDA8703A8E4
+  NestedInstallerFiles:
+    - RelativeFilePath: upbrr-windows-amd64.exe
+      PortableCommandAlias: upbrr
 - Architecture: arm64
   InstallerUrl: https://github.com/autobrr/upbrr/releases/download/v0.3.5.1/upbrr-cli-v0.3.5.1-windows-arm64.zip
   InstallerSha256: 795c0c6c4836488d617d9f8b55ef6454005172f31aadaa3bca8dbe1217a15369
+  NestedInstallerFiles:
+    - RelativeFilePath: upbrr-windows-arm64.exe
+      PortableCommandAlias: upbrr
 ManifestType: installer
 ManifestVersion: 1.12.0
